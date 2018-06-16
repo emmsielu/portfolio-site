@@ -11,13 +11,16 @@ body{
   color: #131313;
 
 }
+[class*=grid-], [class*=grid_], [class~=grid] {
+  margin: 0;
+}
 
 [class~="grid"] [class*="col-"],[class*="grid-"][class*="col-"]{
   padding: 2%;
 
 }
 
-section{
+section, footer{
   padding-left: 5%;
   padding-right: 5%;
 
@@ -58,6 +61,11 @@ p{
 
 }
 
+p.feature{
+    font-weight: 400;
+
+}
+
 a{
 
   font-family: 'Roboto', sans-serif;
@@ -65,7 +73,7 @@ a{
   color: #0F7173;
   padding-bottom: 2px;
   text-decoration: none;
-  border-bottom: 1px solid;
+  transition: .75s;
 
 }
 
@@ -212,16 +220,24 @@ a:hover{
 
 }
 
+.primary-nav [class*="col"] {
+  padding-top: 1%;
+  padding-bottom: 1%;
+
+}
+
 .primary-nav-content{
   min-height: 50px;
 
 }
 
+/* class - selector {property: value;}*/
+
 .logo{
-  /* background-image: url("../images/logo.png"); */
-  /*background-size: auto;
-  background-position: 50% 35%;
-  min-height: 50vh; */
+  background-image: url("/images/logo.svg");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: 50% 50% ;
 
 }
 
@@ -231,18 +247,17 @@ a:hover{
 
 }
 
-.primary-nav a{
+.primary-nav-links a{
     color: #131313;
 
 }
 
-/* .primary-nav a:hover{
-    color: #131313;
+.primary-nav-links a:hover{
+    color: #D81159;
 
-} */
+}
 
 .sub-nav-filters{
-
 
 
 }
@@ -255,8 +270,6 @@ a:hover{
 footer{
   min-height: 100vh;
 
-
-
 }
 
 
@@ -265,7 +278,7 @@ footer{
 /* Homepage banner */
 
 .home-page-hero{
-  height: 250px;
+  min-height: 250px;
 
 }
 
@@ -323,6 +336,13 @@ footer{
 
 .desktop-hidden {
   display: none;
+
+}
+
+.flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 
