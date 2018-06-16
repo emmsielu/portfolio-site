@@ -30,13 +30,13 @@ section, footer{
 
 h1{
   font-size: 5em;
+  margin-top: 0;
   margin-bottom: 0;
 
 }
 
 h1.feature{
   font-size: 6em;
-  margin-bottom: 0;
 
 }
 
@@ -62,7 +62,7 @@ p{
 }
 
 p.feature{
-    font-weight: 400;
+  font-weight: 400;
 
 }
 
@@ -79,6 +79,14 @@ a{
 
 a:hover{
   color: #D81159;
+
+}
+
+hr{
+  border: none;
+  border-bottom: 3px solid #D81159;
+  width: 50px;
+  margin-bottom: 2rem;
 
 }
 
