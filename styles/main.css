@@ -158,7 +158,7 @@ ul{
 
 }
 
-.padding-left-right{
+.padding-x-5pc{
   padding-left: 5%;
   padding-right: 5%;
 
@@ -186,12 +186,23 @@ ul{
   margin-top: 0;
 }
 
+.margin-top-5pc{
+  margin-top: 5%;
+
+}
+
 .margin-bottom-none{
   margin-bottom: 0;
 }
 
 .margin-bottom-5pc{
   margin-bottom: 5%;
+
+}
+
+.margin-x-2pc{
+  margin-left: 2%;
+  margin-right: 2%;
 
 }
 
@@ -204,12 +215,6 @@ ul{
 
 .desktop-hidden {
   display: none;
-
-}
-
-.margin-x-2pc{
-  margin-left: 2%;
-  margin-right: 2%;
 
 }
 
@@ -356,8 +361,6 @@ ul{
 
 }
 
-
-
 .logo{
   background-image: url("/images/logo.svg");
   background-size: 80%;
@@ -388,6 +391,16 @@ footer{
 
 }
 
+footer a{
+  color: white;
+
+}
+
+footer img{
+  width: 100%;
+
+}
+
 
 /* BANNERS */
 
@@ -410,11 +423,6 @@ footer{
 }
 
 /* PANELS */
-
-/* .stacked-panels > div{
-  padding: 20px;
-
-} */
 
 [class*="panel-text"] p{
   margin: 0;
@@ -454,6 +462,18 @@ footer{
 
 .detail-image-3_bg{
   background-image: url(https://picsum.photos/800/800/?random);
+
+}
+
+/* GENERAL IMAGE STUFF */
+
+.round-image{
+  background-image: url("/images/about.jpg");
+  background-size: cover;
+  margin: auto;
+  border-radius: 100%;
+  width: 20vh;
+  height: 20vh;
 
 }
 
