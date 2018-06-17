@@ -35,36 +35,54 @@ section{
 
 /* HEADINGS AND STYLING */
 
+/*13px = 0.8125rem micropcopy
+16px = 1rem (base) body, buttons, H4, links
+20px = 1.25rem MOB H3
+24px = 1.5rem DT H3
+28px = 1.75rem MOB H2
+32px = 2rem DT H2
+34px = 2.125rem MOB H1
+38px = 2.375rem MOB H1 F
+42px = 2.625rem DT H1
+50px = 3.125rem DT H1 F*/
+
 h1{
-  font-size: 5em;
+  font-size: 2.625rem;
   margin-top: 0;
   margin-bottom: 0;
 
 }
 
 h1.feature{
-  font-size: 6em;
+  font-size: 3.125rem;
 
 }
 
 h2{
-  font-size: 3rem;
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
 
 }
 
 h3{
-  font-size: 2rem;
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
 
 }
 
 h4{
-  font-size: 1.25rem;
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
 
 }
 
 
 p{
-
+  margin-top: 0;
+  margin-bottom: 0;
 
 }
 
@@ -74,7 +92,6 @@ p.feature{
 }
 
 a{
-
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   color: #0F7173;
@@ -95,6 +112,11 @@ hr{
   width: 50px;
   margin-bottom: 2rem;
   margin-left: 0;
+
+}
+
+ul{
+  /*some styling in here */
 
 }
 
