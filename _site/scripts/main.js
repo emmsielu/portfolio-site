@@ -5,18 +5,20 @@ $(document).ready(function(){
   console.log("hello");
 
 
-  function showMenu(){
+  function toggleMenu(){
 
-    console.log("clicked");
+    console.log("opened");
+    $('body').toggleClass('menu-visible menu-hidden');
 
   }
+
   //bind click event to button
 
-  $('body').on('click', '.toggle-menu', showMenu);
+  $('body').on('click', '.toggle-menu', toggleMenu);
 
   //image scroll reveal
 
-  window.sr = ScrollReveal({ reset: true });
-  sr.reveal('.show-me', { opacity: 0, duration: 2000});
+  // window.sr = ScrollReveal({ reset: true });
+  // sr.reveal('.show-me', { opacity: 0, duration: 2000});
 
 });
