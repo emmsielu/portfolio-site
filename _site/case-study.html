@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="styles/main.css">
 
   </head>
-  <body>
+  <body class="menu-hidden">
 
 
 
@@ -22,41 +22,44 @@
     <!-- CONTENT -->
 
     <!-- NAVIGATION -->
-<header class="primary-nav">
+<header class="primary-nav sticky-nav">
   <div class="grid primary-nav-content">
     <div class="col-9">
       <a href="/index.html"><img src="/icons/logo.svg"></a>
     </div>
 
-    <div class="grid-spaceBetween col-3 primary-nav-links">
+    <div class="grid-spaceBetween col-3 primary-nav-links small-hidden">
   <a href="index.html">Portfolio</a>
   <a href="#about">About & Contact</a>
 
 </div>
-<div class="hamburger-menu desktop-hidden small-show">
-  <a href=""><img src="images/icon_hamburger.png"></a>
+<div class="col-3 small-show burger-menu">
+  <img class="burger-button" src="icons/hamburger-menu_icon.svg">
 </div>
 
 
 </header>
 
+ <!-- - - - -  Case Study - Project Title Header Banner - - - -  -->
+
 <section class="grid min-height-none">
-  <div class="col-6 flex-middle">
+  <div class="col-6_xs-12 flex-middle">
     <h1 class="feature">project name</h1>
     <hr>
   </div>
-  <div class="col-6 flex-middle">
+  <div class="col-6_xs-12 flex-middle">
     <p class="feature">Project description: Bacon ipsum dolor amet pork belly ball tip ham pig beef ribs. Flank ham swine, jowl kevin ball tip pork belly pork drumstick boudin tenderloin pig picanha.</p>
   </div>
 </section>
+
 <!-- - - - - MAIN IMAGE - - - -  -->
 <section class="project-lead-img banner">
 
 </section>
 
 <!-- - - - - PROJECT ATTRIBUTES, E.G. CLIENT AND DATE PLUS SUMMARY - - - -  -->
-<section class="grid-center-noGutter-noBottom project-overview grid padding-x-none">
-  <div class="col-4 padding-x-2pc">
+<section class="grid-center-noGutter-noBottom project-overview grid padding-x-none xs-add-x-padding-5pc">
+  <div class="col-4_xs-12 padding-x-2pc">
     <h3>Client</h3>
     <p>Name of client</p>
     <h3>Date</h3>
@@ -70,7 +73,10 @@
       <li>Project management</li>
     </ul>
   </div>
-  <div class="col-6 margin-y-none padding-x-2pc">
+
+<hr class="content-divider bigger-than-small-hide">
+
+  <div class="col-6_xs-12 margin-y-none padding-x-2pc">
     <h2 class="md-left-align-text">Project Overview</h2>
       <p class="feature">Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.</p>
       <p>Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.</p>
@@ -82,15 +88,15 @@
 
 <!-- - - - - PROJECT ASPECTS - UX CHALLENGES, GOALS, DESIGN PROCESS - - - -  -->
 <section class="grid project-aspects">
-  <div class="col-4">
+  <div class="col-4_xs-12">
     <h2>Challenges</h2>
     <p>Queen triggerfish, "mudfish Mozambique tilapia pilot fish searobin burrowing goby mackerel rivuline, inconnu." Red snapper mustard eel giant danio mail-cheeked fish pompano dolphinfish bighead carp.</p>
   </div>
-  <div class="col-4">
+  <div class="col-4_xs-12">
     <h2>Goals</h2>
     <p>Mullet, stingray tubeshoulder grouper dojo loach, gudgeon striped burrfish rock beauty, triggerfish thornyhead. Canthigaster rostrata giant danio halfbeak Pacific salmon, dab lined sole cutthroat eel scup yellowfin cutthroat trout."</p>
   </div>
-  <div class="col-4">
+  <div class="col-4_xs-12">
     <h2>Processes</h2>
     <p>Basking shark stickleback limia leatherjacket john dory ribbon eel titan triggerfish Port Jackson shark. Indian mul tailor lenok tiger shovelnose catfish yellow perch sea raven barracuda medusafish. Saber-toothed blenny shark goblin shark California flyingfish betta electric catfish blue whiting dhufish blue shark leaffish queen danio garden eel?</p>
   </div>
@@ -99,31 +105,31 @@
 <hr class="content-divider">
 
 <!-- - - - - PROJECT DETAILS, e.g. anything that needs explaining or was stand-out- - - -  -->
-<section class="project-detail stacked-panels">
+<section class="project-detail stacked-panels xs-remove-x-padding">
   <div class="grid colour-dark-grey text-white">
-    <div class="col-6">
+    <div class="col-6_xs-12 xs-add-x-padding-5pc">
       <div class="detail-image-1_bg"></div>
     </div>
-    <div class="col-6-middle panel-text"><p>Pork chop sirloin rump shoulder hamburger short ribs turkey, landjaeger strip steak tenderloin. Boudin beef ribs ham, capicola rump andouille ground round jerky short ribs prosciutto tongue. Cupim pig doner t-bone venison brisket andouille drumstick pork belly pastrami pork loin kevin meatloaf.</p></div>
+    <div class="col-6_xs-12-middle panel-text xs-add-x-padding-5pc"><p>Pork chop sirloin rump shoulder hamburger short ribs turkey, landjaeger strip steak tenderloin. Boudin beef ribs ham, capicola rump andouille ground round jerky short ribs prosciutto tongue. Cupim pig doner t-bone venison brisket andouille drumstick pork belly pastrami pork loin kevin meatloaf.</p></div>
   </div>
   <div class="grid banner-reverse">
-    <div class="col-6">
-      <div class="detail-image-2_bg"></div>
+    <div class="col-6_xs-12">
+      <div class="detail-image-2_bg xs-add-x-padding-5pc"></div>
     </div>
-    <div class="col-6-middle panel-text"><p>Bacon ipsum dolor amet porchetta frankfurter prosciutto kevin, pastrami jerky beef tri-tip pork belly venison turducken. Tongue spare ribs kevin boudin. Shankle hamburger meatball, doner strip steak turkey shank jowl capicola chuck filet mignon leberkas. Strip steak tail brisket capicola.</p></div>
+    <div class="col-6_xs-12-middle panel-text xs-add-x-padding-5pc"><p>Bacon ipsum dolor amet porchetta frankfurter prosciutto kevin, pastrami jerky beef tri-tip pork belly venison turducken. Tongue spare ribs kevin boudin. Shankle hamburger meatball, doner strip steak turkey shank jowl capicola chuck filet mignon leberkas. Strip steak tail brisket capicola.</p></div>
   </div>
   <div class="grid colour-dark-grey text-white">
-    <div class="col-6">
-      <div class="detail-image-3_bg"></div>
+    <div class="col-6_xs-12">
+      <div class="detail-image-3_bg xs-add-x-padding-5pc"></div>
     </div>
-    <div class="col-6-middle panel-text"><p>Tongue rump doner meatloaf, bresaola salami landjaeger chicken buffalo t-bone shoulder pancetta cow strip steak bacon. Tongue short ribs picanha pork chop corned beef, turducken pork belly landjaeger biltong shoulder. Tri-tip bresaola ground round, kevin brisket fatback turkey sausage ribeye pork hamburger pancetta pork chop filet mignon. Pork kielbasa ball tip tri-tip.</p></div>
+    <div class="col-6_xs-12-middle panel-text xs-add-x-padding-5pc"><p>Tongue rump doner meatloaf, bresaola salami landjaeger chicken buffalo t-bone shoulder pancetta cow strip steak bacon. Tongue short ribs picanha pork chop corned beef, turducken pork belly landjaeger biltong shoulder. Tri-tip bresaola ground round, kevin brisket fatback turkey sausage ribeye pork hamburger pancetta pork chop filet mignon. Pork kielbasa ball tip tri-tip.</p></div>
   </div>
 </section>
 
 <!-- - - - - project conclusion - - - -  -->
 
 <section class="grid-center project-conclusion margin-bottom-5pc">
-  <div class="col-6">
+  <div class="col-6_xs-12 xs-remove-x-padding">
   <h2>Conclusion</h2>
     <p class="feature">Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.</p>
   </div>
@@ -133,7 +139,7 @@
     <!-- FOOTER -->
 
     <footer id="about" class="grid-center-equalHeight colour-dark-grey text-white">
-      <div class="col-6-center padding-x-2pc padding-y-2pc">
+      <div class="col-6_xs-12-center padding-x-2pc padding-y-2pc">
         <div class="round-image">
         </div>
         <div class="panel-text margin-top-2pc">
@@ -141,7 +147,7 @@
           <p> Something about doing design for ages, UX for about 10, UI Design for about 2, newly learned to code to be able to build prototoypes and Proof of concepts and finally feeling relevant when all my dev friends talk about front-end and I just cry about AS3</p>
         </div>
       </div>
-      <div class="col-4-center-middle padding-x-2pc padding-y-2pc flex-stack">
+      <div class="col-4_xs-12-center-middle padding-x-2pc padding-y-2pc flex-stack small-center">
         <a href="mailto:emmalucybevan@gmail.com">
           <div class="grid-middle-center padding-y-2pc">
             <div class="col-2"><img src="/icons/email_icon.svg" alt="linkedIn logo"></div>
@@ -164,6 +170,12 @@
       </div>
 
     </footer>
+
+    <!-- - - - - - - javascript - - - -  -->
+    <script type="text/javascript" src="/scripts/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script type="text/javascript" src="/scripts/main.js"></script>
+
 
   </body>
 </html>
