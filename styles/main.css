@@ -17,6 +17,7 @@ body{
 
 [class*=grid-], [class*=grid_], [class~=grid] {
   margin: 0;
+
 }
 
 [class~="grid"] [class*="col-"],[class*="grid-"][class*="col-"]{
@@ -36,7 +37,7 @@ section, footer{
 }
 
 section{
-  /* min-height: 350px; */
+  min-height: 350px;
 
 }
 
@@ -112,7 +113,6 @@ a{
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   color: #0F7173;
-  padding-bottom: 2px;
   text-decoration: none;
   transition: .75s;
 
@@ -164,9 +164,27 @@ ul{
 
 }
 
+.padding-x-2pc{
+  padding-left: 2%;
+  padding-right: 2%;
+
+}
+
+.padding-y-2pc{
+  padding-top: 2%;
+  padding-bottom: 2%;
+
+}
+
 .padding-x-none{
   padding-left: 0;
   padding-right: 0;
+
+}
+
+.padding-y-none{
+  padding-top:0;
+  padding-bottom: 0;
 
 }
 
@@ -223,6 +241,12 @@ ul{
   align-items: center;
   justify-content: center;
 
+}
+
+.flex-stack{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 /* BACKGROUND COLOURS */
@@ -343,10 +367,17 @@ ul{
 
 }
 
+/* TEXT HELPERS */
+
+.center-text{
+  text-align: center;
+
+}
+
 /* NAV */
 
 .primary-nav{
-  /* background-color: #EDDDD4; */
+
 
 }
 
@@ -362,7 +393,7 @@ ul{
 }
 
 .logo{
-  background-image: url("/images/logo.svg");
+  background-image: url("/icons/logo.svg");
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: 50% 50% ;
@@ -387,7 +418,7 @@ ul{
 /* - - - - Footer - - - -- */
 
 footer{
-  min-height: 100vh;
+
 
 }
 
@@ -398,6 +429,11 @@ footer a{
 
 footer img{
   width: 100%;
+
+}
+
+footer .col-2{
+  line-height: 1;
 
 }
 
@@ -473,7 +509,7 @@ footer img{
   margin: auto;
   border-radius: 100%;
   width: 20vh;
-  height: 20vh;
+  height: 20vh !important;
 
 }
 
