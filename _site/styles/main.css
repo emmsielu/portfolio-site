@@ -76,7 +76,7 @@ h2{
   font-family: 'Exo', sans-serif;
   font-weight: 500;
   margin-top: 0;
-  margin-bottom:2%;
+  /* margin-bottom:2%; */
   text-align: center;
   line-height: 1;
 
@@ -111,6 +111,13 @@ p{
 
 p.feature{
   font-weight: 400;
+  margin: 0;
+  padding:0;
+
+}
+
+.project-overview p.feature{
+  margin-bottom: 1.5rem;
 
 }
 
@@ -121,10 +128,15 @@ p.project-description{
 
 a{
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 700;
   color: #0F7173;
   text-decoration: none;
   transition: .75s;
+
+}
+
+.colour-dark-grey a{
+    color: #BDF2F2;
 
 }
 
@@ -153,6 +165,12 @@ hr.content-divider{
 ul{
   margin-top: 1%;
   margin-bottom: 2%;
+
+}
+
+.stacked-panels a{
+  margin-top: 2rem;
+
 
 }
 
@@ -392,6 +410,10 @@ ul{
 /* NAV */
 
 
+#header [class*="col-"] {
+  padding:1rem;
+}
+
 
 .primary-nav [class*="col"] {
   /* padding-top: 1%;
@@ -411,10 +433,14 @@ ul{
   background-position: 50% 50% ;
 
 }
+.primary-nav-links {
+  text-align:right;
+}
 
 .primary-nav-links a{
     color: #131313;
-
+    padding: 0.5rem 1rem;
+    display: inline-block;
 }
 
 .primary-nav-links a:hover{
@@ -451,8 +477,19 @@ footer{
 
 }
 
-footer a{
+footer.colour-dark-grey a{
   color: white;
+
+}
+
+footer.colour-dark-grey .panel-text a{
+  color: #D81159;
+  text-align: center;
+
+}
+
+footer.colour-dark-grey a:hover{
+  color: #D81159;
 
 }
 
@@ -467,21 +504,21 @@ footer img{
 /* Homepage banner */
 
 .home-page-hero{
-  min-height: 250px;
+  min-height: 200px;
 
 }
 
 .banner{
-  background-position: center;
+  background-position: center center;
   background-size: cover;
-  min-height: 250px;
+  min-height: 50vh;
 
 }
 
 /* PANELS */
 
 [class*="panel-text"] p{
-  margin: 0;
+  /* margin: 0; */
   padding: 0;
 
 }
@@ -521,15 +558,33 @@ footer img{
 
 }
 
+
+
 /* GENERAL IMAGE STUFF */
 
 .round-image{
   background-image: url("/images/about.jpg");
+  background-position: center;
   background-size: cover;
   margin: auto;
   border-radius: 100%;
   width: 20vh;
   height: 20vh !important;
+
+}
+
+.square-image{
+  background-image: url(https://picsum.photos/600/600/?random);
+  background-size: cover;
+  margin: auto;
+  display: block;
+  height: 20vh !important;
+
+}
+
+
+.case-study-grid div{
+  padding: 2%;
 
 }
 
@@ -582,23 +637,14 @@ footer img{
     width: 100%;
     background-color: white;
     border-bottom: 1px solid #e9e9e9;
-    padding: 3.5%;
+    padding: 3rem;
     position: fixed;
-    top: -67px;
+    top: -136px;
     transition: 1s;
-
   }
 
   .menu-visible .open-nav-menu{
     top: 50px;
-
-  }
-
-
-
-  .menu-hidden .open-nav-menu {
-
-
 
   }
 
@@ -652,7 +698,7 @@ footer img{
 
   }
 
-  .xs-add-margin-bottom-5pc {
+  .xs-add-margin-bot-5pc {
     margin-bottom: 5%;
 
   }
