@@ -428,9 +428,9 @@ ul{
 
 .logo{
   background-image: url("/images/logo_web.svg");
-  background-size: 80%;
+  background-size: 50%;
   background-repeat: no-repeat;
-  background-position: 50% 50% ;
+  background-position: 10% 50% ;
 
 }
 .primary-nav-links {
@@ -504,7 +504,9 @@ footer img{
 /* Homepage banner */
 
 .home-page-hero{
-  min-height: 200px;
+  min-height: 250px;
+  padding: 1rem;
+  margin: 1rem;
 
 }
 
