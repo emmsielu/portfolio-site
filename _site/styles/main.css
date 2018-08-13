@@ -427,7 +427,7 @@ ul{
 }
 
 .logo{
-  background-image: url("/icons/logo.svg");
+  background-image: url("/images/logo_web.svg");
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: 50% 50% ;
