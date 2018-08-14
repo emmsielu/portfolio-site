@@ -55,19 +55,20 @@ section{
 50px = 3.125rem DT H1 F*/
 
 h1{
-  font-family: 'Exo', sans-serif;
+  font-family: 'Lobster+Two', cursive;
   font-weight: 700;
   font-size: 2.625rem;
   margin-top: 0;
   margin-bottom: 0;
   line-height: 1;
+  color: #333333;
 
 }
 
 h1.feature{
   font-size: 3.125rem;
-  font-weight: 600;
-  color: #283D3B;
+  font-weight: 700i;
+  color: #238285;
 
 }
 
@@ -79,6 +80,7 @@ h2{
   /* margin-bottom:2%; */
   text-align: center;
   line-height: 1;
+  color: #333333;
 
 }
 
@@ -89,6 +91,7 @@ h3{
   margin-top: 0;
   margin-bottom: 2%;
   line-height: 1;
+  color: #333333;
 
 }
 
@@ -427,10 +430,11 @@ ul{
 }
 
 .logo{
-  background-image: url("/images/logo_web.svg");
+  /* background-image: url("/images/logo_web.svg");
   background-size: 50%;
   background-repeat: no-repeat;
-  background-position: 10% 50% ;
+  background-position: 10% 50% ; */
+
 
 }
 .primary-nav-links {
@@ -505,8 +509,7 @@ footer img{
 
 .home-page-hero{
   min-height: 250px;
-  padding: 1rem;
-  margin: 1rem;
+  padding: 0 2%;
 
 }
 
