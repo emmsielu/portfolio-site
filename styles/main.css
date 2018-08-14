@@ -76,7 +76,7 @@ h1.feature{
 h2{
   font-size: 2rem;
   font-family: 'Exo', sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   margin-top: 0;
   /* margin-bottom:2%; */
   text-align: center;
@@ -88,17 +88,22 @@ h2{
 h3{
   font-size: 1.5rem;
   font-family: 'Exo', sans-serif;
-  font-weight: 600;
+  font-weight: 300;
   margin-top: 0;
   margin-bottom: 2%;
-  line-height: 1;
-  color: #333333;
+  line-height: 1.5;
+  color: #238285;
+
+}
+
+h3.feature{
+    color: #333333;
 
 }
 
 h4{
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   margin-top: 0;
   margin-bottom: 2%;
   line-height: 1;
@@ -131,16 +136,16 @@ p.project-description{
 }
 
 a{
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  color: #0F7173;
+  font-family: 'Exo', sans-serif;
+  font-weight: 600;
+  color: #238285;
   text-decoration: none;
   transition: .75s;
 
 }
 
 .colour-dark-grey a{
-    color: #BDF2F2;
+    color: #000000;
 
 }
 
@@ -443,7 +448,8 @@ ul{
 }
 
 .primary-nav-links a{
-    color: #131313;
+    color: #333333;
+    /* font-weight: 300; */
     padding: 0.5rem 1rem;
     display: inline-block;
 }
@@ -471,35 +477,6 @@ ul{
 .menu-hidden .close-button{
   opacity: 0;
 
-
-}
-
-
-/* - - - - Footer - - - -- */
-
-footer{
-
-
-}
-
-footer.colour-dark-grey a{
-  color: white;
-
-}
-
-footer.colour-dark-grey .panel-text a{
-  color: #D81159;
-  text-align: center;
-
-}
-
-footer.colour-dark-grey a:hover{
-  color: #D81159;
-
-}
-
-footer img{
-  width: 100%;
 
 }
 
@@ -719,6 +696,29 @@ footer img{
     min-height: 0;
 
   }
+}
+
+/* - - - - Footer - - - -- */
+
+footer{
+
+
+}
+
+footer.colour-dark-grey a{
+  color: white;
+  padding-bottom: 0;
+
+}
+
+footer.colour-dark-grey a:hover{
+  color: #CF2257;
+
+}
+
+footer img{
+  width: 100%;
+
 }
 
 @media (min-width: 577px){
