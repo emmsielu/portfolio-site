@@ -31,6 +31,7 @@ E[foo*="bar"]	an E element whose foo attribute value contains the substring bar
 
 [class~="grid"] [class*="col"], [class*="grid"] [class*="col"]{
   padding: 0;
+  margin: 2% 1.5rem 3%;
 
 }
 
@@ -136,7 +137,6 @@ h4{
 p{
   margin: 1rem;
   line-height: 1.4;
-  margin:0;
   padding:0;
 
 }
@@ -688,6 +688,12 @@ footer{
 footer a {
   color: white;
   padding-bottom: 0;
+
+}
+
+footer a.single-link{
+  display: inline-block;
+  margin-top: 1rem;
 
 }
 
