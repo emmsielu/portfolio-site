@@ -2,25 +2,35 @@
 /* class - selector {property: value;}*/
 
 *{
-  /* border: 1px solid #999; */
+  border: 1px solid #999;
   box-sizing: border-box;
 
 }
 
 body{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Exo', sans-serif;
   font-weight: 300;
   color: #131313;
 
 }
 
-[class*=grid-], [class*=grid_], [class~=grid] {
+/*E[foo~="bar"]	an E element whose foo attribute value is a list of whitespace-separated values, one of which is exactly equal to bar
+
+E[foo^="bar"]	an E element whose foo attribute value begins exactly with the string bar
+
+E[foo$="bar"]	an E element whose foo attribute value ends exactly with the string bar
+
+E[foo*="bar"]	an E element whose foo attribute value contains the substring bar
+
+*/
+
+[class*="grid"], [class~="grid"] { /*removed - [class*="grid_"],*/
   margin: 0;
 
 }
 
-[class~="grid"] [class*="col-"],[class*="grid-"][class*="col-"]{
-  padding: 3.5%;
+[class~="grid"] [class*="col"], [class*="grid"] [class*="col"]{
+  padding: 0;
 
 }
 
@@ -31,13 +41,18 @@ li{
 }
 
 section, footer{
-  padding: 3% 5%;
+  padding: 3%;
   margin-top: 2%;
 
 }
 
+header {
+  padding: 0.5rem 3% 0 3%;
+
+}
+
 section{
-  min-height: 350px;
+  min-height: 250px;
 
 }
 
@@ -72,14 +87,12 @@ h1.feature{
 
 }
 
-
-
 h2{
   font-size: 2rem;
   font-family: 'Exo', sans-serif;
   font-weight: 600;
-  margin-top: 0;
-  /* margin-bottom:2%; */
+  margin-top: 0rem;  /*****H2 don't need margin before, unless something comes before it??? *****/
+  margin-bottom:2rem;
   text-align: center;
   line-height: 1;
   color: #333333;
@@ -90,8 +103,8 @@ h3{
   font-size: 1.5rem;
   font-family: 'Exo', sans-serif;
   font-weight: 300;
-  margin-top: 0;
-  margin-bottom: 2%;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
   line-height: 1.5;
   color: #238285;
 
@@ -113,16 +126,8 @@ h4{
 
 
 p{
-  margin-top: 0;
-  margin-bottom: 4%;
+  margin: 1rem;
   line-height: 1.4;
-
-}
-
-p.feature{
-  font-weight: 400;
-  margin: 0;
-  padding:0;
 
 }
 
@@ -133,6 +138,7 @@ p.feature{
 
 p.project-description{
   line-height: 1.5;
+  margin:0;
 
 }
 
@@ -140,8 +146,7 @@ p.header-name{
   font-family: 'Lobster Two', cursive;
   font-weight: 700;
   font-size: 1.5rem;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
   color: #238285;
 
 }
@@ -155,13 +160,8 @@ a{
 
 }
 
-.colour-dark-grey a{
-    color: #000000;
-
-}
-
 a:hover{
-  color: #D81159;
+  color: #CF2257;
 
 }
 
@@ -169,14 +169,14 @@ hr{
   border: none;
   border-bottom: 3px solid #D81159;
   width: 50px;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   margin-left: 0;
 
 }
 
 hr.content-divider{
   border: none;
-  border-bottom: 2px solid #0F7173;
+  border-bottom: 2px solid #C9F5F3;
   width: 25vw;
   margin: auto;
 
@@ -190,7 +190,6 @@ ul{
 
 .stacked-panels a{
   margin-top: 2rem;
-
 
 }
 
@@ -373,7 +372,7 @@ ul{
 }
 
 .text-white{
-  color: #FFF;
+  color: #FFFFFF;
 
 }
 
@@ -395,30 +394,7 @@ ul{
 
 /* FONT HELPERS */
 
-.font-light{
-    font-weight: 300;
 
-}
-
-.font-regular{
-  font-weight: 400;
-
-}
-
-.font-medium{
-  font-weight: 500;
-
-}
-
-.font-semibold{
-  font-weight: 600;
-
-}
-
-.font-bold{
-  font-weight: 700;
-
-}
 
 /* TEXT HELPERS */
 
@@ -430,11 +406,6 @@ ul{
 /* NAV */
 
 
-#header [class*="col-"] {
-  padding:1rem;
-}
-
-
 .primary-nav [class*="col"] {
   /* padding-top: 1%;
   padding-bottom: 1%; */
@@ -442,31 +413,30 @@ ul{
 }
 
 .primary-nav-content{
-  min-height: 50px;
+  max-height: 50px;
 
 }
 
 .logo{
-  /* background-image: url("/images/logo_web.svg");
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-position: 10% 50% ; */
-
+  padding-left: 0.5rem;
 
 }
+
 .primary-nav-links {
   text-align:right;
+
 }
 
 .primary-nav-links a{
-    color: #333333;
-    /* font-weight: 300; */
-    padding: 0.5rem 1rem;
+    color: #131313;
+    font-weight: 600;
+    padding: 0;
+    margin-left: 1.5rem;
     display: inline-block;
 }
 
 .primary-nav-links a:hover{
-    color: #D81159;
+    color: #CF2257;
 
 }
 
@@ -487,7 +457,6 @@ ul{
 
 .menu-hidden .close-button{
   opacity: 0;
-
 
 }
 
@@ -560,7 +529,7 @@ ul{
   background-image: url("/images/about.jpg");
   background-position: center;
   background-size: cover;
-  margin: auto;
+  /* margin: auto; */
   border-radius: 100%;
   width: 20vh;
   height: 20vh !important;
@@ -612,6 +581,7 @@ ul{
   }
 
   .sticky-nav{
+    padding: 0;
     position: fixed;
     right: 0;
     left: 0;
@@ -639,37 +609,6 @@ ul{
 
   .menu-visible .open-nav-menu{
     top: 50px;
-
-  }
-
-  h1 {
-    font-size: 2.125rem;
-  }
-
-  h1.feature {
-    font-size: 2.375rem;
-  }
-
-  h2 {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    font-size: 1.75rem;
-  }
-
-  h3 {
-    margin-top: 1rem;
-    font-size: 1.25rem;
-  }
-
-  hr{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-
-  }
-
-  hr.content-divider{
-    margin-top: 3rem;
-    margin-bottom: 2rem;
 
   }
 
@@ -716,19 +655,19 @@ footer{
 
 }
 
-footer.colour-dark-grey a{
+footer a {
   color: white;
   padding-bottom: 0;
 
 }
 
-footer.colour-dark-grey a:hover{
-  color: #CF2257;
+footer h2{
+  color: white;
 
 }
 
 footer img{
-  width: 100%;
+  /* width: 100%; */
 
 }
 
