@@ -31,7 +31,7 @@ E[foo*="bar"]	an E element whose foo attribute value contains the substring bar
 
 [class~="grid"] [class*="col"], [class*="grid"] [class*="col"]{
   padding: 0;
-  margin: 2% 1.5rem 3%;
+  /* margin: 2% 1.5rem 3%; */
 
 }
 
