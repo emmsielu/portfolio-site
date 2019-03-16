@@ -1,0 +1,655 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+        <title>Emma Lucy Bevan   ||   Experience Designer</title>
+        <link rel="shortcut icon" href="{Favicon}">
+        <link rel="alternate" type="application/rss+xml" href="{RSS}">
+        {block:Description}
+            <meta name="description" content="{MetaDescription}" />
+        {/block:Description}
+
+        <meta name="image:Header" content=""/>
+        <meta name="text:Resume Link" content=""/>
+        <meta name="text:Blog Link" content=""/>
+        <meta name="text:Email Address" content=""/>
+        <meta name="text:Custom Image Thumbnail Height" content="167"/>
+        <meta name="color:Accent" content="#e20033"/>
+        <meta name="color:Text" content="#ffffff"/>
+        <meta name="color:Link" content="#bce518"/>
+        <meta name="color:Background" content="#333"/>
+        <meta name="color:Thumbnail Background" content="#ffffff"/>
+        <meta name="color:Hover Link Color" content="#ffffff"/>
+		<meta name="color:Borders" content="#0f9fb8"/>
+		<meta name="color:Small Borders" content="#cccccc"/>
+
+        <script type="text/javascript" src="https://matt.cc/tumblr/portfolio/infinitescroll.js"></script>
+
+        <script type="text/javascript" src="https://matt.cc/tumblr/portfolio/jquery-1.5.2.min.js"></script>
+
+
+
+		{block:PermalinkPage}
+
+		<script src="https://matt.cc/tumblr/portfolio/jquery.colorbox-min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+
+		$("a[rel='slideshow']").colorbox({photo:true});
+
+        });
+		</script>
+
+      {/block:PermalinkPage}
+
+
+  <link href='https://fonts.googleapis.com/css?family=Exo:300,600' rel='stylesheet' type='text/css'>
+
+    <style type="text/css" media="screen">
+
+    body{
+    margin:0px;
+    padding:20px;
+    background:{color:Background};
+    font-family: 'Exo', Helvetica, sans-serif;
+    font-size:16px;
+    line-height:24px;
+    color:{color:Text};
+    }
+
+    a{color:{color:Link};
+    text-decoration:none;
+    }
+
+    a:hover{
+    /*background:{color:Accent};*/
+    text-decoration:none;
+    color:{color:Hover Link Color};
+    -webkit-transition: all .25s ease-in-out;
+	-moz-transition: all .25s ease-in-out;
+	-o-transition: all .25s ease-in-out;
+	-webkit-transition: all .25s ease-in-out;
+	transition: all .25s ease-in-out;}
+
+
+    h1{font-size: 32px;
+    line-height: 40px;
+    padding: 0px 0px 10px 0px;
+    margin: 0px;
+    }
+
+
+    h1 a{
+    color:#C9F5F3;
+    text-decoration:none;
+    }
+
+    h1 a:hover{
+    color:#FFFFFF;
+
+    }
+
+    h2{font-size:20px;
+    line-height:24px;
+    color:#C9F5F3;
+    padding: 10px 0px 10px 0px;
+    margin: 0px;
+    }
+
+    #container{
+    width:1080px;
+    margin:auto;
+    }
+
+    .titleH2{
+    padding: 0px 0px 10px 0px;
+
+    }
+
+    #index-bar{border-top:2px solid {color:Borders};padding-bottom:25px;}
+
+    #header-image{max-width:160px;}
+
+    #left{width:200px;
+    float:left;
+    margin-right:10px;
+    padding:25px 10px 0px 10px;
+    border-top:2px solid {color:Borders};
+    }
+
+    #right{
+    width:780px;
+    float:left;
+    }
+
+    .box{
+    float:left;
+    width:250px;
+    height:167px;
+    overflow:hidden;
+    margin:5px;
+    position:relative;
+    background-color:{color:Thumbnail Background};
+    vertical-align:middle;
+    padding:-5px 0px 0px 0px;
+    }
+
+
+	.box-caption{
+	width:220px;
+    height:167px;
+    overflow:hidden;
+    position:absolute;
+    left:0px;
+    top:0px;
+    z-index:99;
+  	background-color:transparent;
+  	filter:alpha(opacity=0);
+  	opacity:0;
+  	display: inline-block;
+  	padding:0px 15px;
+  	text-indent:-2000px;
+	}
+
+	.box-caption-text{
+	color:{color:Hover Link Color};
+	width:220px;
+    height:167px;
+    overflow:hidden;
+    position:absolute;
+    left:0px;
+    top:0px;
+    z-index:95;
+	font-size:12px;
+	line-height:16px;
+  	background-color:transparent;
+  	filter:alpha(opacity=0);
+  	padding:0px 15px;
+  	opacity:0;
+  	display: inline-block;
+  	-webkit-transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-o-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+	transition: opacity .25s ease-in-out;
+	}
+
+
+	.box:hover .box-caption{
+	display: inline-block;
+ 	background-color:transparent;
+	}
+
+	.box:hover .box-caption-text{
+	opacity:.85;
+	filter:alpha(opacity=85);
+	background-color:{color:Accent};
+	}
+
+
+    .middle{
+    float:left;width:500px;margin-right:10px;
+    padding-top:25px;
+    border-top:2px solid {color:Borders};
+    }
+
+
+    .caption{
+    width:250px;float:left;
+    border-top:2px solid {color:Borders};
+    padding:15px 10px 0px 10px;
+    }
+
+    .photoset-caption{
+    	padding:5px 0px;
+    }
+
+    .text{
+    border-top:2px solid {color:Borders};
+    padding:25px 10px 0px 10px;
+    }
+
+
+    .tags{
+    padding:15px 0px;
+    border-top:1px solid {color:Small Borders};
+    font-size:12px;
+    }
+    .tags a{
+    padding:2px;
+    text-decoration:none;
+    }
+
+    .permpaginate{
+    padding:15px 0px;
+    border-top:1px solid {color:Small Borders};
+    border-bottom:1px solid {color:Small Borders};
+    font-size:12px;
+    }
+
+    .permpaginate a{
+    padding:2px;
+    text-decoration:none;
+    }
+
+
+    #pages{list-style:none;
+    margin:5px 0px;
+    border-top:1px solid {color:Small Borders};
+  	padding:0px;}
+    #pages li{
+    }
+
+    #pages a{
+    padding:5px 2px;
+    text-decoration:none;
+    border-bottom:1px solid {color:Small Borders};
+    display:block;
+    }
+
+
+    #footer{
+    font-size:12px;
+    margin-top:50px;
+    padding:20px 10px;
+    border-top:2px solid {color:Borders};
+    border-bottom:2px solid {color:Borders};
+    }
+
+    #footer a{
+    padding:2px;
+    }
+
+
+
+    .clear{
+    clear:both;
+    }
+
+	.html_photoset p{
+	padding:0px 0px 5px 0px;
+	margin:0;
+	}
+
+
+	 {block:IfCustomImageThumbnailHeight}
+
+	 .box{height:{text:Custom Image Thumbnail Height}px;}
+     .box-caption{height:{text:Custom Image Thumbnail Height}px;}
+       .box-caption-text{height:{text:Custom Image Thumbnail Height}px;}
+      {/block:IfCustomImageThumbnailHeight}
+
+
+      /*
+    ColorBox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+
+/*
+    User Style:
+    Change the following styles to modify the appearance of ColorBox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay{background:#fff;}
+#colorbox{}
+    #cboxContent{margin-top:32px; overflow:visible;}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{background:#000; padding:1px;}
+        #cboxLoadingGraphic{background:url(https://matt.cc/tumblr/portfolio/loader.gif) no-repeat center center;}
+        #cboxLoadingOverlay{background:#000;}
+        #cboxTitle{position:absolute; top:-22px; left:0; color:#000;}
+        #cboxCurrent{position:absolute; top:-22px; right:205px; text-indent:-9999px;}
+        #cboxSlideshow, #cboxPrevious, #cboxNext, #cboxClose{text-indent:-9999px; width:20px; height:20px; position:absolute; top:-20px; background:url(https://matt.cc/tumblr/portfolio/controls.png) no-repeat 0 0;}
+        #cboxPrevious{background-position:0px 0px; right:44px;}
+        #cboxPrevious.hover{background-position:0px -25px;}
+        #cboxNext{background-position:-25px 0px; right:22px;}
+        #cboxNext.hover{background-position:-25px -25px;}
+        #cboxClose{background-position:-50px 0px; right:0;}
+        #cboxClose.hover{background-position:-50px -25px;}
+        .cboxSlideshow_on #cboxPrevious, .cboxSlideshow_off #cboxPrevious{right:66px;}
+        .cboxSlideshow_on #cboxSlideshow{background-position:-75px -25px; right:44px;}
+        .cboxSlideshow_on #cboxSlideshow.hover{background-position:-100px -25px;}
+        .cboxSlideshow_off #cboxSlideshow{background-position:-100px 0px; right:44px;}
+        .cboxSlideshow_off #cboxSlideshow.hover{background-position:-75px -25px;}
+
+
+    </style>
+
+    <!--[if IE]>
+    <style type="text/css" media="screen">
+    .box-caption{
+  	font-size:80px;
+  	line-height:120px;
+    }
+
+
+    #right{
+    width:785px;
+    float:left;
+    }
+
+     #container{
+    width:985px;
+    margin:auto;
+    }
+
+
+
+
+
+
+
+
+
+    </style>
+    <![endif]-->
+
+    </head>
+    <body>
+
+    <div id="container">
+    <div id="left">
+
+
+      {block:IfHeaderImage}
+      <a href="/"><img src="{image:Header}" id="header-image" border="0"/></a>
+      {/block:IfHeaderImage}
+
+      {block:IfHeaderImage}
+      <h1><a href="/">{Title}</a></h1>
+      {/block:IfHeaderImage}
+
+       {block:IfHeaderImage}
+      <h2 class="titleH2"><a href="/">Experience Designer</a></h2>
+      {/block:IfHeaderImage}
+
+      <!--{block:IfNotHeaderImage}-->
+      <!--<h1><a href="/">{Title}</a></h1>-->
+      <!--{/block:IfNotHeaderImage}-->
+
+
+
+
+        {block:Description}
+         <p id="description">{Description}</p>
+        {/block:Description}
+
+        <ul id="pages">
+
+        {block:HasPages}
+        {block:Pages}<li><a href="{URL}">{Label}</a></li>{/block:Pages}
+        {/block:HasPages}
+
+        {block:IfResumeLink}
+         <li><a href="{text:Resume Link}">LinkedIn</a></li>
+		{block:IfResumeLink}
+
+		{block:IfBlogLink}
+          <li><a href="{text:Blog Link}">Illustration blog</a></li>
+		{block:IfBlogLink}
+
+		{block:IfEmailAddress}
+          <li><a href="mailto:{text:Email Address}">Contact</a></li>
+		{block:IfEmailAddress}
+
+		</ul>
+
+
+    </div>
+	<div id="right">
+	{block:IndexPage}
+	<div id="index-bar"></div>
+	<div class="clear"></div>
+	{/block:IndexPage}
+
+        <div id="posts" class="autopagerize_page_element">
+            {block:Posts}
+
+
+                {block:Photo}
+                    <div class="post photo">
+                     {block:IndexPage}<div class="box">
+
+                        <img src="{PhotoURL-250}" alt="{PhotoAlt}"/>
+
+
+                        <div class="box-caption-text">{Caption}</div>
+                        <a href="{Permalink}" class="box-caption">#</a>
+
+
+
+                     </div>
+                         {/block:IndexPage}
+
+
+
+						{block:PermalinkPage}
+
+
+						<div class="middle">
+
+						<div class="middle-content">
+
+						<a href="{PhotoURL-HighRes}" rel="slideshow">
+						<img src="{PhotoURL-500}" alt="{PhotoAlt}" border="0"/>
+						</a>
+						</div>
+
+
+						</div>
+
+						<div class="caption">
+                        {block:Caption}
+                        {Caption}
+                        {/block:Caption}
+
+                        {block:HasTags}
+                        <div class="tags">Tags:
+                        {block:Tags}<a href="{TagURL}">{Tag}</a>
+                        {/block:Tags}
+                        </div>
+                        {/block:HasTags}
+
+                        {block:PermalinkPagination}
+                       <div class="permpaginate">
+
+                       {block:NextPost}
+                        <a href="{NextPost}">Previous Project</a>
+                       {/block:NextPost}
+                        {block:PreviousPost}
+                       <a href="{PreviousPost}">Next Project</a>
+                       {/block:PreviousPost}
+                        </div>
+                       {/block:PermalinkPagination}
+
+                        </div>
+
+                    	{/block:PermalinkPage}
+
+	                    </div>
+                		{/block:Photo}
+
+
+                	{block:Photoset}
+                	{block:IndexPage}
+                	    <script type="text/javascript">
+                $(document).ready(function() {
+          $('.html_photoset').killPhotoset({
+   photoSize: 250
+});
+});
+
+                </script>
+                	{/block:IndexPage}
+
+                	  {block:PermalinkPage}
+                	    <script type="text/javascript">
+                $(document).ready(function() {
+          $('.html_photoset').killPhotoset({
+   photoSize: 500
+});
+});
+
+                </script>
+                {/block:PermalinkPage}
+                    <div class="post photoset">
+                    {block:IndexPage}
+                    <div class="box">
+
+
+                     {block:Photos}
+				       <img src="{PhotoURL-250}" alt="{PhotoAlt}"/>
+		       	    {/block:Photos}
+
+                        <div class="box-caption-text">{Caption}</div>
+                        <a href="{Permalink}" class="box-caption">#</a>
+
+
+
+                    </div>
+                    {/block:IndexPage}
+
+					{block:PermalinkPage}
+					<div class="middle">
+					<div class="middle-content">
+					 {block:Photos}
+				    	<a href="{PhotoURL-HighRes}" rel="slideshow">
+						<img src="{PhotoURL-500}" alt="{PhotoAlt}"border="0"/>
+						</a>
+
+
+
+			        <div class="photoset-caption">{Caption}</div>
+
+		       	    {/block:Photos}
+
+					</div>
+
+					</div>
+                   <div class="caption">
+                        {block:Caption}
+                        {Caption}
+                        {/block:Caption}
+
+                        {block:HasTags}
+                        <div class="tags">Tags:
+                        {block:Tags}<a href="{TagURL}">{Tag}</a>
+                        {/block:Tags}
+                        </div>
+                        {/block:HasTags}
+                        {block:PermalinkPagination}
+                       <div class="permpaginate">
+
+                       {block:NextPost}
+                        <a href="{NextPost}">Previous Project</a>
+                       {/block:NextPost}
+                       {block:PreviousPost}
+                       <a href="{PreviousPost}">Next Project</a>
+                       {/block:PreviousPost}
+
+                        </div>
+                       {/block:PermalinkPagination}
+
+                        </div>
+
+                         {/block:PermalinkPage}
+                    </div>
+                {/block:Photoset}
+
+
+
+                {block:Video}
+                    <div class="post video">
+                     {block:IndexPage}<div class="box">
+
+                      {Video-250}
+
+                        <div class="box-caption-text">{Caption}</div>
+                        <a href="{Permalink}" class="box-caption">#</a>
+
+                      </div>
+
+					{/block:IndexPage}
+
+					  {block:PermalinkPage}
+					  <div class="middle">
+
+					  <div class="middle-content">{Video-500}</div>
+
+					  </div>
+                       <div class="caption">
+                        {block:Caption}
+                        {Caption}
+                        {/block:Caption}
+
+                        {block:HasTags}
+                        <div class="tags">Tags:
+                        {block:Tags}<a href="{TagURL}">{Tag}</a>
+                        {/block:Tags}
+                        </div>
+                        {/block:HasTags}
+
+                       {block:PermalinkPagination}
+                       <div class="permpaginate">
+
+                       {block:NextPost}
+                        <a href="{NextPost}">Previous Project</a>
+                       {/block:NextPost}
+
+                        {block:PreviousPost}
+                       <a href="{PreviousPost}">Next Project</a>
+                       {/block:PreviousPost}
+
+                        </div>
+                       {/block:PermalinkPagination}
+
+                        </div>
+
+                        {/block:PermalinkPage}
+                    </div>
+                {/block:Video}
+
+
+            {/block:Posts}
+
+              {block:PermalinkPage}
+                {block:Posts}
+                {block:Text}
+
+                    <div class="post text">
+                        {block:Title}
+                            <h1>{Title}</h1>
+                        {/block:Title}
+
+                        {Body}
+                    </div>
+
+                {/block:Text}
+                {/block:Posts}
+                {/block:PermalinkPage}
+
+
+
+        </div>
+        </div>
+
+        <div class="clear">
+        </div>
+
+        <p id="footer">
+
+        <a href="/">Home</a> &bull; <a href="/archive">Archive</a> &bull; <a href="/rss">RSS</a> theme by <a href="https://matt.cc">matt mcinerney</a>
+        </p>
+        </div>
+    </body>
+</html>
